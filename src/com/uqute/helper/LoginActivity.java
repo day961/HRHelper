@@ -5,8 +5,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -62,6 +65,8 @@ public class LoginActivity extends Activity implements OnClickListener{
     private EditText edit_usr,edit_pass;//登陆用户及密码输入框
 	/**更所登陆项的菜单是否展开，默认收起*/
 	private boolean isShowMenu = false;
+
+    Handler loginMsgHandler;//消息处理Handler --嘉明
 	
 	public static final int MENU_PWD_BACK = 1;
 	public static final int MENU_HELP = 2;
@@ -73,10 +78,28 @@ public class LoginActivity extends Activity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);//无标题窗体
 		setContentView(R.layout.login);
+
+        /**实现handler消息处理
+         * 判断认证
+         * created by 嘉明
+         * */
+        loginMsgHandler = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                if(msg.obj == "Y"){
+                    Toast.makeText(getBaseContext(), "登陆成功", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getBaseContext(), "账号或密码错误", Toast.LENGTH_SHORT).show();
+                }
+                super.handleMessage(msg);
+            }
+        };
+
 		/**启动窗体设置*/
 		initView();
 	}
-	
+
+    /**窗体设置*/
 	private void initView(){
         edit_usr=(EditText)this.findViewById(R.id.et_Num);
         edit_pass=(EditText)this.findViewById(R.id.et_Pwd);
@@ -105,9 +128,7 @@ public class LoginActivity extends Activity implements OnClickListener{
                         Toast.makeText(getBaseContext(), "请输入您的密码", Toast.LENGTH_SHORT).show();
                     } else {
                         //连网并验证成功，转入登陆
-                        //相关函数
-                        boolean result = login(edit_usr.getText().toString(), edit_pass.getText().toString());
-                        Toast.makeText(getBaseContext(), "示例：登陆返回信息"+result, Toast.LENGTH_SHORT).show();
+                        login(edit_usr.getText().toString(), edit_pass.getText().toString());//由此处进入认证处理（耗时操作）--嘉明
                     }
                 }
             }
@@ -248,56 +269,22 @@ public class LoginActivity extends Activity implements OnClickListener{
     }
 
     /**
-     * 登陆验证函数
+     * 登陆验证函数（入口）
      *（rewrote by 嘉明）
      * 还要继续完善解决卡死问题
      */
-    protected boolean login(String strUID,String strUPW) {
-       /*Demo登陆
-          * 账号:david
+    protected void login(String strUID,String strUPW) {
+        /*Demo登陆
+          * 账号:4321
           * 密码:1234
           */
+        Toast loginToast = Toast.makeText(getBaseContext(), "正在登陆请稍后", Toast.LENGTH_SHORT);
+        loginToast.setGravity(Gravity.CENTER, 0, 0);
+        loginToast.show();
         /**创建新进程用于连接网络进行登陆验证*/
-       checkingThread checkingThread = new checkingThread(strUID, strUPW);
-       checkingThread.start();
-
-        /**阻塞主线程等待登陆验证结束（有界面进程卡死风险！！！！）*/
-       while (checkingThread.isAlive()) {
-           try {
-               Thread.sleep(100);
-           } catch (InterruptedException e) {
-               e.printStackTrace();
-           }
-       }
-       System.out.println("在主函数 Thread NO." + Thread.currentThread().getId() + ".连接状态:" + checkingThread.status);
-       return checkingThread.status;
-
-//       // pc pc登录验证是否成功
-//       String result = null;
-//       // 发送http请求,传递参数
-//       // 获取http返回状态,根据返回状态在界面提示
-//       // web服务器封装并返回一定格式数据对象
-//       // http状态返回正常,取出并解析数据
-//       // 解析服务器返回的数据显示或存储在本地
-//       String queryUrl = "http://day961.uqute.com/API/Login/index.php?username="
-//               + user + "&pwd=" + pass;
-//       System.out.println("url==>" + queryUrl);
-//       HttpPost request = new HttpPost(queryUrl);
-//       try {
-//           HttpResponse response = new DefaultHttpClient()
-//                   .execute(request);
-//
-//           if (response.getStatusLine().getStatusCode() == 200) {
-//               result = EntityUtils.toString(response.getEntity());
-//           }
-//       } catch (ClientProtocolException e) {
-//           // TODO Auto-generated catch block
-//           e.printStackTrace();
-//       } catch (IOException e) {
-//           // TODO Auto-generated catch block
-//           e.printStackTrace();
-//       }
-//       return result; //返回页面信息,成功success,失败fail
+        checkingThread checkingThread = new checkingThread(strUID, strUPW);
+        checkingThread.start();
+        System.out.println("进入认证处理函数 Thread NO.");
     }
 
     /**
@@ -313,9 +300,6 @@ public class LoginActivity extends Activity implements OnClickListener{
             this.strUID = strUID;
             this.strUPW = strUPW;
         }
-
-        private boolean status = false;//储存登陆状态
-
         @Override
         public void run() {
             String uriAPI = "https://day961.uqute.com/API/Login/index1.php";//登陆验证网页
@@ -370,13 +354,20 @@ public class LoginActivity extends Activity implements OnClickListener{
                         Log.d(TAG, "HTTP POST Found Cookie:" + cookies.get(i).toString());
                     }
                 }
+                /*认证通过向主线程发送"Y",不成功发"N"*/
                 if (strRet.equals("y")) {
                     Log.i("TEST", "YES");
-                    status = true;
+
+                    Message m = loginMsgHandler.obtainMessage();
+                    m.obj = "Y";
+                    loginMsgHandler.sendMessage(m);
                     System.out.println("验证通过   Thread NO." + Thread.currentThread().getId());
                 } else {
                     Log.i("TEST", "NO");
-                    status = false;
+
+                    Message m = loginMsgHandler.obtainMessage();
+                    m.obj = "N";
+                    loginMsgHandler.sendMessage(m);
                     System.out.println("验证错误   Thread NO." + Thread.currentThread().getId());
                 }
                 stop();//强制线程退出

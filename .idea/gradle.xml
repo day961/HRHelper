@@ -3,15 +3,11 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="L:\program\helper_project" />
+        <option name="externalProjectPath" value="L:\" />
         <option name="useAutoImport" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="V:\program\helper_project" />
-        <option name="useAutoImport" value="true" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="V:\program\helper_project\MyApplicationProject" />
+        <option name="externalProjectPath" value="V:\" />
       </GradleProjectSettings>
     </option>
   </component>
