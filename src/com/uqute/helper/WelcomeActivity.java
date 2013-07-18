@@ -24,8 +24,9 @@ public class WelcomeActivity extends Activity {
 				// TODO Auto-generated method stub
 				try {
 					Thread.sleep(3000);
-					//获取应用的上下文，生命周期是整个应用，应用结束才会结束
-					getApplicationContext().startActivity(intent);
+                    WelcomeActivity.this.startActivity(intent); //modified by 嘉明
+                    //获取应用的上下文，生命周期是整个应用，应用结束才会结束
+//					getApplicationContext().startActivity(intent);
 					finish();
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
