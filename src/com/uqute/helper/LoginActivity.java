@@ -250,6 +250,7 @@ public class LoginActivity extends Activity implements OnClickListener{
     /**
      * 登陆验证函数
      *（rewrote by 嘉明）
+     * 还要继续完善解决卡死问题
      */
     protected boolean login(String strUID,String strUPW) {
        /*Demo登陆
@@ -302,6 +303,7 @@ public class LoginActivity extends Activity implements OnClickListener{
     /**
      * 登陆验证线程
      *（created by 嘉明）
+     *
      */
     class checkingThread extends Thread {
         private String TAG = "HTTP_DEBUG";
@@ -337,7 +339,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 
                 response = httpclient.execute(httpPost);//执行登陆信息传递，将结果返回
 
-                /*判断连接是否成功，HttpStatus.SC_OK表示连接成功*/
+                /**判断连接是否成功，HttpStatus.SC_OK表示连接成功*/
                 if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
                     System.out.println("请求成功 Thread NO." + Thread.currentThread().getId());
                 } else {

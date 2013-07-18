@@ -37,6 +37,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="439db8d3-e581-4152-9536-c2cdb7e8365d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/uqute/helper/LoginActivity.java" afterPath="$PROJECT_DIR$/src/com/uqute/helper/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -105,14 +106,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/uqute/helper/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="331" column="64" selection-start="11510" selection-end="11510" vertical-scroll-proportion="0.47598255" vertical-offset="4209" max-vertical-offset="6246">
+            <state line="252" column="19" selection-start="8766" selection-end="8766" vertical-scroll-proportion="0.0" vertical-offset="3435" max-vertical-offset="6282">
               <folding>
                 <element signature="e#3321#4235#0" expanded="true" />
                 <element signature="e#4224#4225#0" expanded="true" />
-                <element signature="e#9413#9438#0" expanded="false" />
+                <element signature="e#9433#9458#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -127,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="74" selection-start="391" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="684">
+            <state line="3" column="26" selection-start="165" selection-end="165" vertical-scroll-proportion="0.07860262" vertical-offset="0" max-vertical-offset="687">
               <folding>
                 <element signature="e#581#599#0" expanded="true" />
               </folding>
@@ -185,8 +186,8 @@
         <option value="$PROJECT_DIR$/src/com/uqute/helper/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/src/com/uqute/helper/WelcomeActivity.java" />
         <option value="$PROJECT_DIR$/src/com/uqute/util/SSLSocketFactoryEx.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/uqute/helper/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -487,7 +488,11 @@
       <created>1374130468423</created>
       <updated>1374130468423</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加部分注释，添加程序网络权限，完成登录验证">
+      <created>1374130946580</created>
+      <updated>1374130946580</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -595,7 +600,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加部分注释,完成登录验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加部分注释，添加程序网络权限，完成登录验证" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -610,6 +615,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="添加部分注释,完成登录验证" />
+    <MESSAGE value="添加部分注释，添加程序网络权限，完成登录验证" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -689,28 +695,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="281" selection-end="281" vertical-scroll-proportion="-0.64285713" vertical-offset="108" max-vertical-offset="4248">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/menu_findkey.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="74" selection-start="391" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="684">
-          <folding>
-            <element signature="e#581#599#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/uqute/helper/WelcomeActivity.java">
@@ -734,6 +721,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="281" selection-end="281" vertical-scroll-proportion="-0.64285713" vertical-offset="108" max-vertical-offset="4248">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/uqute/util/SSLSocketFactoryEx.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
@@ -743,11 +740,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/uqute/helper/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="331" column="64" selection-start="11510" selection-end="11510" vertical-scroll-proportion="0.47598255" vertical-offset="4209" max-vertical-offset="6246">
+        <state line="252" column="19" selection-start="8766" selection-end="8766" vertical-scroll-proportion="0.0" vertical-offset="3435" max-vertical-offset="6282">
           <folding>
             <element signature="e#3321#4235#0" expanded="true" />
             <element signature="e#4224#4225#0" expanded="true" />
-            <element signature="e#9413#9438#0" expanded="false" />
+            <element signature="e#9433#9458#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="26" selection-start="165" selection-end="165" vertical-scroll-proportion="0.07860262" vertical-offset="0" max-vertical-offset="687">
+          <folding>
+            <element signature="e#581#599#0" expanded="true" />
           </folding>
         </state>
       </provider>
