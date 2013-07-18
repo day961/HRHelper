@@ -256,11 +256,11 @@ public class LoginActivity extends Activity implements OnClickListener{
           * 账号:david
           * 密码:1234
           */
-        /*创建新进程用于连接网络进行登陆验证*/
+        /**创建新进程用于连接网络进行登陆验证*/
        checkingThread checkingThread = new checkingThread(strUID, strUPW);
        checkingThread.start();
 
-        /*阻塞主线程等待登陆验证结束（严重的界面进程卡死风险！！！！）*/
+        /**阻塞主线程等待登陆验证结束（有界面进程卡死风险！！！！）*/
        while (checkingThread.isAlive()) {
            try {
                Thread.sleep(100);
@@ -299,6 +299,10 @@ public class LoginActivity extends Activity implements OnClickListener{
 //       return result; //返回页面信息,成功success,失败fail
     }
 
+    /**
+     * 登陆验证线程
+     *（created by 嘉明）
+     */
     class checkingThread extends Thread {
         private String TAG = "HTTP_DEBUG";
         private String strUID, strUPW;
@@ -384,7 +388,11 @@ public class LoginActivity extends Activity implements OnClickListener{
         }
     }
 
-    /*信任所有证书以通过服务器的https*/
+    /**
+     * 初始化自定义HttpClient
+     *（created by 嘉明）
+     *
+     * 作用：信任所有证书以通过服务器的https*/
     public static HttpClient getNewHttpClient() {
         try {
             KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());
