@@ -88,6 +88,9 @@ public class LoginActivity extends Activity implements OnClickListener{
             public void handleMessage(Message msg) {
                 if(msg.obj == "Y"){
                     Toast.makeText(getBaseContext(), "登陆成功", Toast.LENGTH_SHORT).show();
+                    //TODO:登陆成功后进入下一个页面（记得finish当前）
+//                    Intent pass = new Intent();
+//                    finish();
                 } else {
                     Toast.makeText(getBaseContext(), "账号或密码错误", Toast.LENGTH_SHORT).show();
                 }
@@ -271,7 +274,7 @@ public class LoginActivity extends Activity implements OnClickListener{
     /**
      * 登陆验证函数（入口）
      *（rewrote by 嘉明）
-     * 还要继续完善解决卡死问题
+     * 初步解决界面凝固问题
      */
     protected void login(String strUID,String strUPW) {
         /*Demo登陆
