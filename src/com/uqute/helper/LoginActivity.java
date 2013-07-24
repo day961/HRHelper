@@ -47,10 +47,14 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.params.HttpProtocolParams;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.security.KeyStore;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**登陆界面activity*/
@@ -67,6 +71,8 @@ public class LoginActivity extends Activity implements OnClickListener{
 	private boolean isShowMenu = false;
 
     Handler loginMsgHandler;//消息处理Handler --嘉明
+    private HashMap<String, String> MainSession =new HashMap<String, String>();//登陆保持重点！SESSION--嘉明
+
 	
 	public static final int MENU_PWD_BACK = 1;
 	public static final int MENU_HELP = 2;
@@ -86,10 +92,21 @@ public class LoginActivity extends Activity implements OnClickListener{
         loginMsgHandler = new Handler(){
             @Override
             public void handleMessage(Message msg) {
-                if(msg.obj == "Y"){
+                String chk =msg.getData().getString("s_flag");
+                System.out.println("FLAG:" + chk);
+                if(chk.equals("success")){
                     Toast.makeText(getBaseContext(), "登陆成功", Toast.LENGTH_SHORT).show();
-                    //TODO:登陆成功后进入下一个页面（记得finish当前）
-//                    Intent pass = new Intent();
+                    //TODO:登陆成功后进入下一个页面
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    //传递session参数,在用户登录成功后为session初始化赋值,即传递HashMap的值
+                    Bundle map = new Bundle();
+                    MainSession.put("s_flag", msg.getData().getString("s_flag"));
+                    MainSession.put("s_userid", msg.getData().getString("s_userid"));
+                    MainSession.put("s_username", msg.getData().getString("s_username"));
+                    MainSession.put("s_sessionid", msg.getData().getString("s_sessionid"));
+                    map.putSerializable("sessionid", MainSession);
+                    intent.putExtra("session", map);
+                    startActivity(intent); // 跳转到成功页面
 //                    finish();
                 } else {
                     Toast.makeText(getBaseContext(), "账号或密码错误", Toast.LENGTH_SHORT).show();
@@ -97,7 +114,6 @@ public class LoginActivity extends Activity implements OnClickListener{
                 super.handleMessage(msg);
             }
         };
-
 		/**启动窗体设置*/
 		initView();
 	}
@@ -130,7 +146,7 @@ public class LoginActivity extends Activity implements OnClickListener{
                     if (edit_pass.getText().toString().isEmpty() || ("".equals(edit_pass.getText().toString()))) {
                         Toast.makeText(getBaseContext(), "请输入您的密码", Toast.LENGTH_SHORT).show();
                     } else {
-                        //连网并验证成功，转入登陆
+                        //开始转入登陆
                         login(edit_usr.getText().toString(), edit_pass.getText().toString());//由此处进入认证处理（耗时操作）--嘉明
                     }
                 }
@@ -277,108 +293,102 @@ public class LoginActivity extends Activity implements OnClickListener{
      * 初步解决界面凝固问题
      */
     protected void login(String strUID,String strUPW) {
-        /*Demo登陆
-          * 账号:4321
-          * 密码:1234
-          */
         Toast loginToast = Toast.makeText(getBaseContext(), "正在登陆请稍后", Toast.LENGTH_SHORT);
         loginToast.setGravity(Gravity.CENTER, 0, 0);
         loginToast.show();
         /**创建新进程用于连接网络进行登陆验证*/
         checkingThread checkingThread = new checkingThread(strUID, strUPW);
-        checkingThread.start();
-        System.out.println("进入认证处理函数 Thread NO.");
+        checkingThread.start();//线程启动
+        System.out.println("进入认证处理函数");
     }
 
     /**
-     * 登陆验证线程
-     *（created by 嘉明）
+     * 登陆验证线程 (更新成session认证)
+     *（created by 嘉明）80%
      *
      */
     class checkingThread extends Thread {
-        private String TAG = "HTTP_DEBUG";
         private String strUID, strUPW;
+        private List<Cookie> cookies;
+        private Message m = loginMsgHandler.obtainMessage();//传递登陆认证的返回消息
+        private Bundle bundle = new Bundle();//消息内容
 
         public checkingThread(String strUID, String strUPW) {
-            this.strUID = strUID;
+            this.strUID = strUID;//参数传入
             this.strUPW = strUPW;
         }
         @Override
         public void run() {
-            String uriAPI = "https://day961.uqute.com/API/Login/index1.php";//登陆验证网页
-            String strRet = "";
+            DefaultHttpClient mHttpClient = (DefaultHttpClient) getNewHttpClient();
+//            DefaultHttpClient mHttpClient = new DefaultHttpClient();
+            HttpPost mPost = new HttpPost("https://day961.uqute.com/API/Login/login.php");
+
+            //设置post参数
+            List<BasicNameValuePair> pairs = new ArrayList<BasicNameValuePair>();
+            pairs.add(new BasicNameValuePair("username", strUID));
+            pairs.add(new BasicNameValuePair("password", strUPW));
+
+            try {
+                mPost.setEntity(new UrlEncodedFormEntity(pairs, HTTP.UTF_8));
+            } catch (UnsupportedEncodingException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
 
             try {
                 Looper.prepare();
                 System.out.println("进入判断函数 Thread NO." + Thread.currentThread().getId());
+                HttpResponse response = mHttpClient.execute(mPost);//HttpClient执行Post请求
+                int res = response.getStatusLine().getStatusCode();
+                if (res == 200) {//200表示请求成功
+                    HttpEntity entity = response.getEntity();//得到请求实体
 
-                DefaultHttpClient httpclient = (DefaultHttpClient) getNewHttpClient();
-                //DefaultHttpClient httpclient = new DefaultHttpClient();
-                HttpResponse response;
-                HttpPost httpPost = new HttpPost(uriAPI);
+                    if (entity != null) {
+                        String info = EntityUtils.toString(entity);
+                        System.out.println("反馈内容:"+info);
 
-                List<NameValuePair> nvpl = new ArrayList<NameValuePair>();
-                nvpl.add(new BasicNameValuePair("uid", strUID));
-                nvpl.add(new BasicNameValuePair("upw", strUPW));
+                        cookies = mHttpClient.getCookieStore().getCookies();//得到cookies
+                        if (cookies.isEmpty()) {
+                            System.out.println("HTTP POST Cookie not found.");
+                        } else {
+                            for (int i = 0; i < cookies.size(); i++) {
+                                System.out.println("HTTP POST Found Cookie:" + cookies.get(i).toString());
+                            }
+                        }
 
-                HttpEntity httpentity = new UrlEncodedFormEntity(nvpl, HTTP.UTF_8);
-                httpPost.setEntity(httpentity);
+                        //以下主要是对服务器端返回的数据进行解析
+                        JSONObject jsonObject=null;
+                        //flag为登录成功与否的标记,从服务器端返回的数据
+                        String flag="";
+                        String name="";
+                        String userid="";
+                        String sessionid="";
+                        try {
+                            jsonObject = new JSONObject(info);
+                            flag = jsonObject.getString("flag");
+                            name = jsonObject.getString("name");
+                            userid = jsonObject.getString("userid");
+                            sessionid = jsonObject.getString("sessionid");
 
-                response = httpclient.execute(httpPost);//执行登陆信息传递，将结果返回
-
-                /**判断连接是否成功，HttpStatus.SC_OK表示连接成功*/
-                if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
-                    System.out.println("请求成功 Thread NO." + Thread.currentThread().getId());
-                } else {
-                    System.out.println("请求错误 Thread NO." + Thread.currentThread().getId());
-                }
-
-                HttpEntity entity = response.getEntity();
-
-                Log.d(TAG, "HTTP POST getStatusLine:" + response.getStatusLine());
-                strRet = EntityUtils.toString(entity);
-                Log.i(TAG, strRet);
-                strRet = strRet.trim().toLowerCase();//strRet存放验证结果(trim清除空格,toLowerCase变小写)
-
-                /*取得Cookie内容*/
-                List<Cookie> cookies = httpclient.getCookieStore().getCookies();
-
-                if (entity != null) {
-                    entity.consumeContent();
-                }
-
-                Log.d(TAG, "HTTP POST Initialize of cookies.");
-                cookies = httpclient.getCookieStore().getCookies();
-                if (cookies.isEmpty()) {
-                    Log.d(TAG, "HTTP POST Cookie not found.");
-                    Log.i(TAG, entity.toString());
-                } else {
-                    for (int i = 0; i < cookies.size(); i++) {
-                        Log.d(TAG, "HTTP POST Found Cookie:" + cookies.get(i).toString());
+                        } catch (JSONException e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+                        //把从服务器返回的内容打包（装入bundle）
+                        bundle.putString("s_flag",flag);
+                        bundle.putString("s_userid", userid);
+                        bundle.putString("s_username", name);
+                        bundle.putString("s_sessionid", sessionid);
+                        m.setData(bundle);
+                        loginMsgHandler.sendMessage(m);//发送到主线程
                     }
-                }
-                /*认证通过向主线程发送"Y",不成功发"N"*/
-                if (strRet.equals("y")) {
-                    Log.i("TEST", "YES");
-
-                    Message m = loginMsgHandler.obtainMessage();
-                    m.obj = "Y";
-                    loginMsgHandler.sendMessage(m);
-                    System.out.println("验证通过   Thread NO." + Thread.currentThread().getId());
-                } else {
-                    Log.i("TEST", "NO");
-
-                    Message m = loginMsgHandler.obtainMessage();
-                    m.obj = "N";
-                    loginMsgHandler.sendMessage(m);
-                    System.out.println("验证错误   Thread NO." + Thread.currentThread().getId());
                 }
                 stop();//强制线程退出
                 Looper.loop();
                 //super.run();
             } catch (Exception e) {
                 e.printStackTrace();
-                System.out.println("进入异常   Thread NO." + Thread.currentThread().getId() + e.getMessage());
+                //System.out.println("进入异常   Thread NO." + Thread.currentThread().getId() + e.getMessage());
             }
             super.run();
         }

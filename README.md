@@ -1,4 +1,4 @@
-HRHelper
+﻿HRHelper
 ========
 
 爱帮手<br/>
@@ -9,3 +9,6 @@ HRHelper
 修正部分代码并添加注释。添加网络访问权限。完成登录验证（重写Login函数，添加了SSLSocketFactoryEX类）。--嘉明<br/>
 问题：还需解决界面凝固问题。还需完成web端的数据库验证 <br/>
 
+0.0.3:<br/>
+
+解决界面凝固 <br/>
