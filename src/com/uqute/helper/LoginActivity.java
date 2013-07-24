@@ -88,6 +88,7 @@ public class LoginActivity extends Activity implements OnClickListener{
         /**实现handler消息处理
          * 判断认证
          * created by 嘉明
+         * 90%
          * */
         loginMsgHandler = new Handler(){
             @Override
@@ -104,6 +105,7 @@ public class LoginActivity extends Activity implements OnClickListener{
                     MainSession.put("s_userid", msg.getData().getString("s_userid"));
                     MainSession.put("s_username", msg.getData().getString("s_username"));
                     MainSession.put("s_sessionid", msg.getData().getString("s_sessionid"));
+
                     map.putSerializable("sessionid", MainSession);
                     intent.putExtra("session", map);
                     startActivity(intent); // 跳转到成功页面

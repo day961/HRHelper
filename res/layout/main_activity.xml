@@ -5,4 +5,60 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:paddingLeft="0dip">
+        <TextView android:layout_height="fill_parent"
+                  android:layout_width="wrap_content"
+                  android:text="用户ID；">
+        </TextView>
+        <TextView android:layout_height="fill_parent"
+                  android:layout_width="fill_parent"
+                  android:text=""  android:id="@+id/userid_show" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:paddingLeft="0dip">
+        <TextView android:layout_height="fill_parent"
+                  android:layout_width="wrap_content"
+                  android:text="用户名: "   >
+        </TextView>
+        <TextView android:layout_height="fill_parent"
+                  android:layout_width="fill_parent"
+                  android:text=""
+                  android:id="@+id/username_show" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:paddingLeft="0dip">
+        <TextView android:layout_height="fill_parent"
+                  android:layout_width="wrap_content"
+                  android:text="本次会话:"   >
+        </TextView>
+        <TextView android:layout_height="fill_parent"
+                  android:layout_width="fill_parent"
+                  android:text=""
+                  android:id="@+id/sessionid_show" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:paddingLeft="0dip">
+        <Button android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/getinfo"
+                android:text="根据本次会话再次获取用户信息"   >
+        </Button>
+
+    </LinearLayout>
+
 </LinearLayout>
