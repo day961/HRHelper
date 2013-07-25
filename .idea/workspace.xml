@@ -34,7 +34,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="439db8d3-e581-4152-9536-c2cdb7e8365d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/uqute/helper/LoginActivity.java" afterPath="$PROJECT_DIR$/src/com/uqute/helper/LoginActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="loginApplication.iws" />
@@ -105,7 +104,7 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/uqute/helper/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="322" column="23" selection-start="11557" selection-end="11557" vertical-scroll-proportion="0.5204918" vertical-offset="1780" max-vertical-offset="4176">
+            <state line="333" column="0" selection-start="12025" selection-end="12025" vertical-scroll-proportion="0.57933044" vertical-offset="1834" max-vertical-offset="4176">
               <folding>
                 <element signature="method#initView#0;class#LoginActivity#0" expanded="false" />
                 <element signature="method#onClick#0;class#LoginActivity#0" expanded="false" />
@@ -176,6 +175,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
@@ -603,7 +607,11 @@
       <created>1374680996279</created>
       <updated>1374680996279</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加点击登陆后的弹出进度条，修正部分代码注释 0.0.4">
+      <created>1374762178996</created>
+      <updated>1374762178996</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -630,8 +638,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.72206706" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18247126" sideWeight="0.72206706" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27793297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18247126" sideWeight="0.6703911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27793297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="91" y="177" width="1096" height="800" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -711,7 +719,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加点击登陆后的弹出进度条，修正部分代码注释 0.0.4" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -731,6 +739,7 @@
     <MESSAGE value="已经解决界面凝固问题 版本号:0.0.3" />
     <MESSAGE value="初步实现用户登录（SESSION登陆保持），从服务器获得用户信息。版本号:0.0.4" />
     <MESSAGE value="修正Readme" />
+    <MESSAGE value="添加点击登陆后的弹出进度条，修正部分代码注释 0.0.4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -839,7 +848,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/uqute/helper/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="322" column="23" selection-start="11557" selection-end="11557" vertical-scroll-proportion="0.5204918" vertical-offset="1780" max-vertical-offset="4176">
+        <state line="333" column="0" selection-start="12025" selection-end="12025" vertical-scroll-proportion="0.57933044" vertical-offset="1834" max-vertical-offset="4176">
           <folding>
             <element signature="method#initView#0;class#LoginActivity#0" expanded="false" />
             <element signature="method#onClick#0;class#LoginActivity#0" expanded="false" />
