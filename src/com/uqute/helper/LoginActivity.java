@@ -1,6 +1,7 @@
 package com.uqute.helper;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -69,11 +70,12 @@ public class LoginActivity extends Activity implements OnClickListener{
     private EditText edit_usr,edit_pass;//登陆用户及密码输入框
 	/**更所登陆项的菜单是否展开，默认收起*/
 	private boolean isShowMenu = false;
-
+    /**信息处理及cookies*/
     Handler loginMsgHandler;//消息处理Handler --嘉明
     private HashMap<String, String> MainSession =new HashMap<String, String>();//登陆保持重点！SESSION--嘉明
+    /** 登录loading提示框 */
+    private ProgressDialog proDialog;
 
-	
 	public static final int MENU_PWD_BACK = 1;
 	public static final int MENU_HELP = 2;
 	public static final int MENU_EXIT = 3;
@@ -85,19 +87,19 @@ public class LoginActivity extends Activity implements OnClickListener{
 		requestWindowFeature(Window.FEATURE_NO_TITLE);//无标题窗体
 		setContentView(R.layout.login);
 
-        /**实现handler消息处理
+        /**实现handler消息处理及更新UI -90%
          * 判断认证
          * created by 嘉明
-         * 90%
          * */
         loginMsgHandler = new Handler(){
             @Override
             public void handleMessage(Message msg) {
                 String chk =msg.getData().getString("s_flag");
                 System.out.println("FLAG:" + chk);
+                proDialog.dismiss();//“请稍后”对话框消失
                 if(chk.equals("success")){
                     Toast.makeText(getBaseContext(), "登陆成功", Toast.LENGTH_SHORT).show();
-                    //TODO:登陆成功后进入下一个页面
+                    //登陆成功后进入下一个页面
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     //传递session参数,在用户登录成功后为session初始化赋值,即传递HashMap的值
                     Bundle map = new Bundle();
@@ -105,7 +107,6 @@ public class LoginActivity extends Activity implements OnClickListener{
                     MainSession.put("s_userid", msg.getData().getString("s_userid"));
                     MainSession.put("s_username", msg.getData().getString("s_username"));
                     MainSession.put("s_sessionid", msg.getData().getString("s_sessionid"));
-
                     map.putSerializable("sessionid", MainSession);
                     intent.putExtra("session", map);
                     startActivity(intent); // 跳转到成功页面
@@ -141,15 +142,21 @@ public class LoginActivity extends Activity implements OnClickListener{
         btn_login.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                if ((edit_usr.getText().toString().isEmpty()) || ("".equals(edit_usr.getText().toString()))) {
-                    Toast.makeText(getBaseContext(), "请输入正确用户名以便登陆", Toast.LENGTH_SHORT).show();
-
+                proDialog = ProgressDialog.show(LoginActivity.this, "连接中..",
+                        "登陆中..请稍后....", true, true);
+                if ((edit_usr.getText().toString().isEmpty()) ||
+                        ("".equals(edit_usr.getText().toString()))) {
+                    proDialog.dismiss();//“请稍后”对话框消失
+                    Toast.makeText(getBaseContext(), "请输入用户名", Toast.LENGTH_SHORT).show();
                 } else {
-                    if (edit_pass.getText().toString().isEmpty() || ("".equals(edit_pass.getText().toString()))) {
-                        Toast.makeText(getBaseContext(), "请输入您的密码", Toast.LENGTH_SHORT).show();
+                    if (edit_pass.getText().toString().isEmpty() ||
+                            ("".equals(edit_pass.getText().toString()))) {
+                        proDialog.dismiss();//“请稍后”对话框消失
+                        Toast.makeText(getBaseContext(), "请输入密码", Toast.LENGTH_SHORT).show();
                     } else {
                         //开始转入登陆
-                        login(edit_usr.getText().toString(), edit_pass.getText().toString());//由此处进入认证处理（耗时操作）--嘉明
+                        //由此处进入认证处理（耗时操作）--嘉明
+                        login(edit_usr.getText().toString(), edit_pass.getText().toString());
                     }
                 }
             }
@@ -164,10 +171,10 @@ public class LoginActivity extends Activity implements OnClickListener{
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (checkbox_rp.isChecked()) {
                     if ("".equals(edit_usr.getText().toString())) {
-                        Toast.makeText(getBaseContext(), "请输入正确用户名以便登陆", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(),"请输入用户名", Toast.LENGTH_SHORT).show();
                     } else {
                         if ("".equals(edit_pass.getText().toString())) {
-                            Toast.makeText(getBaseContext(), "请输入您的密码", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getBaseContext(),"请输入密码", Toast.LENGTH_SHORT).show();
                         } else {
                             //检测用户及密码入框正确后进行用户密码记录
                             save_rm(edit_usr.getText().toString(), edit_pass.getText().toString());
@@ -175,7 +182,8 @@ public class LoginActivity extends Activity implements OnClickListener{
                         }
                     }
                 } else {
-                    if (!("".equals(edit_usr.getText().toString())) && ("".equals(edit_pass.getText().toString()))) {
+                    if (!("".equals(edit_usr.getText().toString())) &&
+                            ("".equals(edit_pass.getText().toString()))) {
                         if (!checkbox_rp.isChecked()) {
                             clean_rm(edit_usr.getText().toString());
                             checkbox_rp.setChecked(false);
@@ -193,7 +201,8 @@ public class LoginActivity extends Activity implements OnClickListener{
             @Override
             public void onFocusChange(View view, boolean b) {
                 if(edit_pass.isFocused()){
-                    if((!"".equals(edit_usr.getText().toString()))||(!edit_usr.getText().toString().isEmpty())){
+                    if((!"".equals(edit_usr.getText().toString()))||
+                            (!edit_usr.getText().toString().isEmpty())){
                         edit_pass.setText(getpass(edit_usr.getText().toString()));
                         checkbox_rp.setChecked(true);
                     }
@@ -201,8 +210,7 @@ public class LoginActivity extends Activity implements OnClickListener{
             }
         });
 	}
-	
-	
+
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
@@ -248,8 +256,10 @@ public class LoginActivity extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		switch(item.getItemId()){
 		case MENU_PWD_BACK:
+            //TODO：密码找回
 			break;
 		case MENU_HELP:
+            //TODO：帮助
 			break;
 		case MENU_EXIT:
 			finish();
@@ -292,12 +302,9 @@ public class LoginActivity extends Activity implements OnClickListener{
     /**
      * 登陆验证函数（入口）
      *（rewrote by 嘉明）
-     * 初步解决界面凝固问题
+     *
      */
     protected void login(String strUID,String strUPW) {
-        Toast loginToast = Toast.makeText(getBaseContext(), "正在登陆请稍后", Toast.LENGTH_SHORT);
-        loginToast.setGravity(Gravity.CENTER, 0, 0);
-        loginToast.show();
         /**创建新进程用于连接网络进行登陆验证*/
         checkingThread checkingThread = new checkingThread(strUID, strUPW);
         checkingThread.start();//线程启动
