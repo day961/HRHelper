@@ -82,7 +82,6 @@ public class LoginActivity extends Activity implements OnClickListener{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);//无标题窗体
 		setContentView(R.layout.login);
@@ -110,6 +109,8 @@ public class LoginActivity extends Activity implements OnClickListener{
                     map.putSerializable("sessionid", MainSession);
                     intent.putExtra("session", map);
                     startActivity(intent); // 跳转到成功页面
+                    //页面切换效果
+                    overridePendingTransition(R.anim.translucent_enter, R.anim.translucent_exit);
 //                    finish();
                 } else {
                     Toast.makeText(getBaseContext(), "账号或密码错误", Toast.LENGTH_SHORT).show();
@@ -134,7 +135,6 @@ public class LoginActivity extends Activity implements OnClickListener{
 		menu_more = findViewById(R.id.menu_more);
 		view_more =  findViewById(R.id.view_more);
 		view_more.setOnClickListener(this);
-
         /**
          * 按钮-登陆按钮
          *
@@ -164,7 +164,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 
         /**
          * 记住密码选项----复选框
-         *
+         *TODO:记住账号密码（也要记住账号）
          */
         checkbox_rp.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -203,7 +203,7 @@ public class LoginActivity extends Activity implements OnClickListener{
                 if(edit_pass.isFocused()){
                     if((!"".equals(edit_usr.getText().toString()))||
                             (!edit_usr.getText().toString().isEmpty())){
-                        edit_pass.setText(getpass(edit_usr.getText().toString()));
+                        edit_pass.setText(getpass(edit_usr.getText().toString(),1));
                         checkbox_rp.setChecked(true);
                     }
                 }
@@ -213,12 +213,13 @@ public class LoginActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.view_more:
+            //TODO:更多登陆选项
 			showMoreMenu(isShowMenu);
 			break;
 		case R.id.btn_login_regist:
+            //TODO:注册账号页面
             Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
             startActivity(intent);
             break;
@@ -244,7 +245,6 @@ public class LoginActivity extends Activity implements OnClickListener{
     /**创建系统功能菜单*/
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// TODO Auto-generated method stub
 		menu.add(0, MENU_PWD_BACK, 1, "密码找回").setIcon(R.drawable.menu_findkey);
 		menu.add(0,MENU_HELP,2,"帮助").setIcon(R.drawable.menu_setting);
 		menu.add(0, MENU_EXIT, 3, "退出").setIcon(R.drawable.menu_exit);
@@ -253,7 +253,6 @@ public class LoginActivity extends Activity implements OnClickListener{
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// TODO Auto-generated method stub
 		switch(item.getItemId()){
 		case MENU_PWD_BACK:
             //TODO：密码找回
@@ -290,11 +289,10 @@ public class LoginActivity extends Activity implements OnClickListener{
         return flag;
     }
 
-    public String getpass(String name) {
+    public String getpass(String name,int i) {
         SharedPreferences sp;
-        String passwd, user;
+        String passwd;
         sp = getSharedPreferences(name, Context.MODE_PRIVATE);
-        user = sp.getString("name", "");
         passwd = sp.getString("pswd", "");
         return passwd;
     }
@@ -328,8 +326,8 @@ public class LoginActivity extends Activity implements OnClickListener{
         }
         @Override
         public void run() {
-            DefaultHttpClient mHttpClient = (DefaultHttpClient) getNewHttpClient();
-//            DefaultHttpClient mHttpClient = new DefaultHttpClient();
+            DefaultHttpClient mHttpClient = (DefaultHttpClient) getNewHttpClient();//带SSLHttpClient
+//            DefaultHttpClient mHttpClient = new DefaultHttpClient(); //不带SSL HttpClient
             HttpPost mPost = new HttpPost("https://day961.uqute.com/API/Login/login.php");
 
             //设置post参数
@@ -340,7 +338,6 @@ public class LoginActivity extends Activity implements OnClickListener{
             try {
                 mPost.setEntity(new UrlEncodedFormEntity(pairs, HTTP.UTF_8));
             } catch (UnsupportedEncodingException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
 
@@ -380,7 +377,6 @@ public class LoginActivity extends Activity implements OnClickListener{
                             sessionid = jsonObject.getString("sessionid");
 
                         } catch (JSONException e) {
-                            // TODO Auto-generated catch block
                             e.printStackTrace();
                         }
                         //把从服务器返回的内容打包（装入bundle）
