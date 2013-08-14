@@ -99,7 +99,7 @@ public class LoginActivity extends Activity implements OnClickListener{
                 if(chk.equals("success")){
                     Toast.makeText(getBaseContext(), "登陆成功", Toast.LENGTH_SHORT).show();
                     //登陆成功后进入下一个页面
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainTab_MainActivity.class);//TODO MainActivity暂时没用
                     //传递session参数,在用户登录成功后为session初始化赋值,即传递HashMap的值
                     Bundle map = new Bundle();
                     MainSession.put("s_flag", msg.getData().getString("s_flag"));

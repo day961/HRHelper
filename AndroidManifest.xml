@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.uqute.helper"
-    android:versionCode="4"
-    android:versionName="0.0.4" >
+    android:versionCode="5"
+    android:versionName="0.0.5" >
 
     <uses-sdk android:minSdkVersion="10" />
 
@@ -29,6 +29,18 @@
         <activity android:name=".RegisterActivity">
         </activity>
         <activity android:name=".RegisterConfirmActivity">
+        </activity>
+        <activity android:name=".MainTab_MainActivity">
+        </activity>
+        <activity android:name=".MainTab_AActivity">
+        </activity>
+        <activity android:name=".MainTab_BActivity">
+        </activity>
+        <activity android:name=".MainTab_CActivity">
+        </activity>
+        <activity android:name=".MainTab_DActivity">
+        </activity>
+        <activity android:name=".MainTab_EActivity">
         </activity>
     </application>
 
