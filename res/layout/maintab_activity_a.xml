@@ -11,7 +11,7 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:orientation="vertical"
-              android:background="#f0f0f0">
+              android:background="@drawable/splash">
 
     <TextView
             android:id="@+id/TabA_topText"

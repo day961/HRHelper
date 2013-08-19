@@ -30,33 +30,33 @@
                     android:checked="true"
                     android:id="@id/radio_button0"
                     android:layout_marginTop="2.0dip"
-                    android:text="@string/main_home"
+                    android:text="@string/main_mission"
                     android:drawableTop="@drawable/home_icon_1_n"
                     style="@style/main_tab_bottom" />
             <RadioButton
                     android:id="@id/radio_button1"
                     android:layout_marginTop="2.0dip"
-                    android:text="@string/main_news"
+                    android:text="@string/main_publish"
                     android:drawableTop="@drawable/home_icon_2_n"
                     style="@style/main_tab_bottom" />
             <RadioButton
                     android:id="@id/radio_button2"
                     android:layout_marginTop="2.0dip"
-                    android:text="@string/main_manage_date"
-                    android:drawableTop="@drawable/home_icon_3_n"
-                    style="@style/main_tab_bottom" />
-            <RadioButton
-                    android:id="@id/radio_button3"
-                    android:layout_marginTop="2.0dip"
                     android:text="@string/main_friends"
                     android:drawableTop="@drawable/home_icon_4_n"
                     style="@style/main_tab_bottom" />
             <RadioButton
-                    android:id="@id/radio_button4"
+                    android:id="@id/radio_button3"
                     android:layout_marginTop="2.0dip"
-                    android:text="@string/more"
+                    android:text="@string/main_setting"
                     android:drawableTop="@drawable/home_icon_5_n"
                     style="@style/main_tab_bottom" />
+            <!--<RadioButton-->
+                    <!--android:id="@id/radio_button4"-->
+                    <!--android:layout_marginTop="2.0dip"-->
+                    <!--android:text="@string/more"-->
+                    <!--android:drawableTop="@drawable/home_icon_5_n"-->
+                    <!--style="@style/main_tab_bottom" />-->
         </RadioGroup>
     </LinearLayout>
 </TabHost>
