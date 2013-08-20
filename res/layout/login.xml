@@ -36,7 +36,8 @@
                 android:background="#00ffffff"
                 android:hint="可使用学号/用户名登陆"
                 android:inputType="number"
-                android:paddingLeft="10dp" />
+                android:paddingLeft="10dp"
+                android:textColor="#000000"/>
 
             <Button
                 android:id="@+id/btn_more_pop"
@@ -62,7 +63,8 @@
             android:background="#00ffffff"
             android:hint="请输入密码"
             android:inputType="textPassword"
-            android:paddingLeft="10dp" />
+            android:paddingLeft="10dp"
+            android:textColor="#000000"/>
     </LinearLayout>
 
     <Button

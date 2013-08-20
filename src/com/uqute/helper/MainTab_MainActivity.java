@@ -2,17 +2,35 @@ package com.uqute.helper;
 
 import android.app.TabActivity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
-import android.view.Window;
+import android.view.KeyEvent;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TabHost;
+import android.widget.TextView;
+
+import com.uqute.ImageLoader.Constants;
+import com.uqute.menudrawer.MenuDrawer;
 
 import java.util.HashMap;
 
-public class MainTab_MainActivity extends TabActivity implements OnCheckedChangeListener{
-//    private MenuDrawer mDrawer;
+public class MainTab_MainActivity extends TabActivity implements OnCheckedChangeListener,View.OnClickListener{
+
+    private static final String STATE_MENUDRAWER = "net.simonvt.menudrawer.samples.WindowSample.menuDrawer";
+    private static final String STATE_ACTIVE_VIEW_ID = "net.simonvt.menudrawer.samples.WindowSample.activeViewId";
+    private MenuDrawer mDrawer;
+//    private MenuAdapter mAdapter;
+    private ListView mList;
+    private int mActivePosition = -1;
+    private String mContentText;
+    private TextView mContentTextView;
+    private int mActiveViewId;
+
 
     private HashMap<String, String>session;
 
@@ -22,13 +40,42 @@ public class MainTab_MainActivity extends TabActivity implements OnCheckedChange
 	private Intent mCIntent;
 	private Intent mDIntent;
 //	private Intent mEIntent;
-	
+
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        ActionBar actionBar = this.getActionBar();
+//        actionBar.setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP, ActionBar.DISPLAY_HOME_AS_UP);
+//
+//    }
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.maintab_activity);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        setContentView(R.layout.maintab_activity);
+
+        if (savedInstanceState != null) {
+            mActiveViewId = savedInstanceState.getInt(STATE_ACTIVE_VIEW_ID);
+        }
+        mDrawer = MenuDrawer.attach(this, MenuDrawer.MENU_DRAG_WINDOW);
+        mDrawer.setContentView(R.layout.maintab_activity);
+        mDrawer.setTouchMode(MenuDrawer.TOUCH_MODE_FULLSCREEN);
+        mDrawer.setMenuView(R.layout.maintabmenu_left);
+
+        findViewById(R.id.item1).setOnClickListener(this);
+        findViewById(R.id.item2).setOnClickListener(this);
+        findViewById(R.id.item3).setOnClickListener(this);
+        findViewById(R.id.item4).setOnClickListener(this);
+        findViewById(R.id.item5).setOnClickListener(this);
+        findViewById(R.id.item6).setOnClickListener(this);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+            this.getActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
+//        mDrawer.peekDrawer();//第一次运行时滑动菜单会飘出来提示用户
 
         //获取intent
         session =  (HashMap<String, String>)
@@ -45,8 +92,10 @@ public class MainTab_MainActivity extends TabActivity implements OnCheckedChange
         this.mDIntent = new Intent(this,MainTab_DActivity.class);
 //        this.mEIntent = new Intent(this,MainTab_EActivity.class);
 
+        //放置intent内容
         mAIntent.putExtra("username_info",username_info);
         mAIntent.putExtra("userid_info",userid_info);
+        mAIntent.putExtra(Constants.Extra.IMAGES, Constants.IMAGES);
 
         //设置监听器
 		((RadioButton) findViewById(R.id.radio_button0))
@@ -112,4 +161,58 @@ public class MainTab_MainActivity extends TabActivity implements OnCheckedChange
 		return this.mTabHost.newTabSpec(tag).setIndicator(getString(resLabel),
 				getResources().getDrawable(resIcon)).setContent(content);
 	}
+
+
+    @Override
+    protected void onRestoreInstanceState(Bundle inState) {
+        super.onRestoreInstanceState(inState);
+        mDrawer.restoreState(inState.getParcelable(STATE_MENUDRAWER));
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelable(STATE_MENUDRAWER, mDrawer.saveState());
+        outState.putInt(STATE_ACTIVE_VIEW_ID, mActiveViewId);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                mDrawer.toggleMenu();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    //在tabActivity中拦截子activity的按键事件
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+            final int drawerState = mDrawer.getDrawerState();
+            if (drawerState == MenuDrawer.STATE_OPEN || drawerState == MenuDrawer.STATE_OPENING) {
+                mDrawer.closeMenu();
+                return true;
+            }
+        }
+        return super.dispatchKeyEvent(event);
+    }
+//    @Override
+//    public void onBackPressed() {
+//        final int drawerState = mDrawer.getDrawerState();
+//        if (drawerState == MenuDrawer.STATE_OPEN || drawerState == MenuDrawer.STATE_OPENING) {
+//            mDrawer.closeMenu();
+//            return;
+//        }
+//        Toast.makeText(getBaseContext(), "BackPressed", Toast.LENGTH_SHORT).show();
+//        super.onBackPressed();
+//    }
+
+    @Override
+    public void onClick(View v) {
+        mDrawer.setActiveView(v);
+//        mContentTextView.setText("Active item: " + ((TextView) v).getText());
+        mDrawer.closeMenu();
+        mActiveViewId = v.getId();
+    }
 }

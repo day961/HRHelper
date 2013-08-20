@@ -1,33 +1,25 @@
 package com.uqute.helper;
 
-import android.app.Activity;
 import android.app.TabActivity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
-import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TabHost;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import org.apache.http.cookie.Cookie;
-
-import java.net.CookieManager;
-import java.util.HashMap;
-import java.util.List;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.RadioButton;
+import android.widget.TabHost;
+
+import com.uqute.menudrawer.MenuDrawer;
+
+import java.util.HashMap;
 
 /**
  * Created by suoday on 13-7-19.
  * 登陆成功后页面
  */
 public class MainActivity extends TabActivity implements OnCheckedChangeListener {
+    private MenuDrawer mDrawer;
+
     private HashMap<String, String>session;
 
     private TabHost mTabHost;

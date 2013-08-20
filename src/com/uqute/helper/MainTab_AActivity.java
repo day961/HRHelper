@@ -1,21 +1,39 @@
 package com.uqute.helper;
 
-import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.assist.ImageLoadingListener;
+import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
+import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
+import com.uqute.ImageLoader.BaseListViewActivity;
+import com.uqute.ImageLoader.Constants;
+import com.uqute.ImageLoader.ImagePagerActivity;
 import com.uqute.XListView.XListView;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
-public class MainTab_AActivity extends Activity implements XListView.IXListViewListener{
+public class MainTab_AActivity extends BaseListViewActivity implements XListView.IXListViewListener{
+    DisplayImageOptions options;//图片加载器选项
+    String[] imageUrls;
 
     private HashMap<String, String> session;//Session信息
 
@@ -35,8 +53,19 @@ public class MainTab_AActivity extends Activity implements XListView.IXListViewL
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.maintab_activity_a);
 
-//		tv.setGravity(Gravity.CENTER);
-//		setContentView(tv);
+        Bundle bundle = getIntent().getExtras();
+        imageUrls = getIntent().getExtras().getStringArray(Constants.Extra.IMAGES);//获取url
+
+        // 配置图片加载及显示选项
+        options = new DisplayImageOptions.Builder()
+                .showStubImage(R.drawable.ic_launcher)//设置图片在下载期间显示的图片
+                .showImageForEmptyUri(R.drawable.ic_launcher)//设置图片Uri为空或是错误的时候显示的图片
+                .showImageOnFail(R.drawable.ic_launcher)//设置图片加载/解码过程中错误时候显示的图片
+                .cacheInMemory(true)//设置下载的图片是否缓存在内存中
+                .cacheOnDisc(true)//设置下载的图片是否缓存在SD卡中
+                .displayer(new RoundedBitmapDisplayer(20))//设置图片的显示方式 (设置圆角图片)
+                .build();
+
 
         TextView tt = (TextView)findViewById(R.id.TabA_topText);
         tt.setText("用户名：" + getIntent().getStringExtra("username_info"));
@@ -48,11 +77,30 @@ public class MainTab_AActivity extends Activity implements XListView.IXListViewL
         mListView = (XListView) findViewById(R.id.xListView);
         mListView.setPullLoadEnable(true);
         mAdapter = new ArrayAdapter<String>(this, R.layout.list_item, items);
-        mListView.setAdapter(mAdapter);
+
+//        mListView.setAdapter(mAdapter);//原来的mlistview适配器
+        mListView.setAdapter(new ItemAdapter());
 //		mListView.setPullLoadEnable(false);
 //		mListView.setPullRefreshEnable(false);
         mListView.setXListViewListener(this);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                startImagePagerActivity(position - 1);//因为mlistview从1开始
+            }
+        });
 	}
+//    @Override
+//    public void onSaveInstanceState(Bundle outState) {
+//        outState.putInt(STATE_POSITION, pager.getCurrentItem());
+//    }
+
+    private void startImagePagerActivity(int position) {
+        Intent intent = new Intent(this, ImagePagerActivity.class);
+        intent.putExtra(Constants.Extra.IMAGES, imageUrls);
+        intent.putExtra(Constants.Extra.IMAGE_POSITION, position);
+        startActivity(intent);
+    }
 
     //添加初始的items
     private void geneItems() {
@@ -110,6 +158,78 @@ public class MainTab_AActivity extends Activity implements XListView.IXListViewL
             mListView.stopRefresh();//通知更新完毕
             mListView.stopLoadMore();
             super.onPostExecute(result);
+        }
+    }
+
+    //imageloader adapter
+    class ItemAdapter extends BaseAdapter {
+
+        private ImageLoadingListener animateFirstListener = new AnimateFirstDisplayListener();
+
+        private class ViewHolder {
+            public TextView text;
+            public ImageView image;
+        }
+
+        @Override
+        public int getCount() {
+            return imageUrls.length;
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return position;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(final int position, View convertView, ViewGroup parent) {
+            View view = convertView;
+            final ViewHolder holder;
+            //当该item的图片和文字第一次加载时
+            if (convertView == null) {
+                view = getLayoutInflater().inflate(R.layout.item_list_image, parent, false);
+                holder = new ViewHolder();
+                holder.text = (TextView) view.findViewById(R.id.text);
+                holder.image = (ImageView) view.findViewById(R.id.image);
+                view.setTag(holder);//设置数据??
+            } else {
+                holder = (ViewHolder) view.getTag();
+            }
+
+            holder.text.setText("Item " + (position + 1));
+
+            /**
+             * 显示图片
+             * 参数1：图片url
+             * 参数2：显示图片的控件
+             * 参数3：显示图片的设置
+             * 参数4：监听器
+             */
+            imageLoader.displayImage(imageUrls[position], holder.image, options, animateFirstListener);
+            return view;
+        }
+    }
+
+    //当图片第一次加载的监听事件(渐变显示动画)??
+    private static class AnimateFirstDisplayListener extends SimpleImageLoadingListener {
+
+        static final List<String> displayedImages = Collections.synchronizedList(new LinkedList<String>());
+
+        @Override
+        public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+            if (loadedImage != null) {
+                ImageView imageView = (ImageView) view;
+                boolean firstDisplay = !displayedImages.contains(imageUri);
+                if (firstDisplay) {
+                    FadeInBitmapDisplayer.animate(imageView, 500);
+                    displayedImages.add(imageUri);
+                }
+            }
         }
     }
 
