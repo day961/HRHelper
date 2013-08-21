@@ -43,17 +43,954 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="439db8d3-e581-4152-9536-c2cdb7e8365d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/actionbarsherlock.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/main_topmenu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HRHelper.iml" afterPath="$PROJECT_DIR$/HRHelper.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/uqute/helper/MainTab_AActivity.java" afterPath="$PROJECT_DIR$/src/com/uqute/helper/MainTab_AActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/uqute/helper/MainTab_MainActivity.java" afterPath="$PROJECT_DIR$/src/com/uqute/helper/MainTab_MainActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/AbsActionBarView$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/AbsActionBarView$VisibilityAnimListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/AbsActionBarView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/ActionBar$LayoutParams.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/ActionBar$OnMenuVisibilityListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/ActionBar$OnNavigationListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/ActionBar$Tab.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/ActionBar$TabListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/ActionBar.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarContainer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarContextView$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarContextView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/app/ActionBarImpl$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/app/ActionBarImpl$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/app/ActionBarImpl$ActionModeImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/app/ActionBarImpl$TabImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/app/ActionBarImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock$Implementation.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock$OnActionModeFinishedListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock$OnActionModeStartedListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock$OnCreateOptionsMenuListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock$OnCreatePanelMenuListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock$OnMenuItemSelectedListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock$OnOptionsItemSelectedListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock$OnPrepareOptionsMenuListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock$OnPreparePanelListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/ActionBarSherlock.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/ActionBarSherlockCompat$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/ActionBarSherlockCompat$ActionModeCallbackWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/ActionBarSherlockCompat.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeCallbackWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/ActionBarSherlockNative$ActionModeWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/ActionBarSherlockNative.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarView$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarView$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarView$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarView$ExpandedActionViewMenuPresenter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarView$HomeView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarView$SavedState$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarView$SavedState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ActionBarView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/app/ActionBarWrapper$TabWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/app/ActionBarWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenu.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuItem.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuItemView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$ActionButtonSubmenu.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$HasPermanentMenuKey.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OpenOverflowRunnable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowMenuButton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$OverflowPopup.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$PopupPresenterCallback.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$SavedState$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter$SavedState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuView$ActionMenuChildView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuView$LayoutParams.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ActionMenuView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/ActionMode$Callback.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/ActionMode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/ActionProvider$SubUiVisibilityListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/ActionProvider.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/ActionProviderWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel$ActivityChooserModelClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel$ActivityResolveInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel$ActivitySorter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel$DefaultSorter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel$HistoricalRecord.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel$HistoryLoader$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel$HistoryLoader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel$HistoryPersister.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel$OnChooseActivityListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserModel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserView$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserView$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserView$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserView$ActivityChooserViewAdapter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserView$Callbacks.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserView$SetActivated.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ActivityChooserView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/Animator$AnimatorListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/Animator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorListenerAdapter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$AnimatorSetListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$Builder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$Dependency.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$DependencyListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet$Node.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/BaseMenuPresenter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/BuildConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/CapitalizingButton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/CapitalizingTextView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/CollapsibleActionView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/FloatEvaluator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAbsSpinner$RecycleBin.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAbsSpinner$SavedState$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAbsSpinner$SavedState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAbsSpinner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAdapterView$AdapterContextMenuInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAdapterView$AdapterDataSetObserver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAdapterView$OnItemLongClickListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAdapterView$OnItemSelectedListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAdapterView$SelectionNotifier.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsAdapterView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsColorDrawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsLinearLayout.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsListPopupWindow$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsListPopupWindow$DropDownListView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsListPopupWindow$ListSelectorHider.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupDataSetObserver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupScrollListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsListPopupWindow$PopupTouchInterceptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsListPopupWindow$ResizePopupRunnable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsListPopupWindow.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsProgressBar$AccessibilityEventSender.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsProgressBar$RefreshProgressRunnable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsProgressBar$SavedState$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsProgressBar$SavedState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsProgressBar.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsSpinner$DropDownAdapter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsSpinner$DropdownPopup$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsSpinner$DropdownPopup.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsSpinner$SpinnerPopup.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsSpinner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsToast.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/IcsView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/IntEvaluator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/IntKeyframeSet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$FloatKeyframe.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$IntKeyframe.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe$ObjectKeyframe.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/ListMenuItemView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/Menu.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuBuilder$Callback.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuBuilder$ItemInvoker.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuBuilder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/MenuInflater$InflatedOnMenuItemClickListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/MenuInflater$MenuState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/MenuInflater.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/MenuItem$OnActionExpandListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/MenuItem$OnMenuItemClickListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/MenuItem.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuItemImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuItemWrapper$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuItemWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuPopupHelper$ExpandedIndexObserver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuPopupHelper$MenuAdapter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuPopupHelper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuPresenter$Callback.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuPresenter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuView$ItemView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/MenuWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/ObjectAnimator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/PopupWindowCompat$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/PopupWindowCompat.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder$IntPropertyValuesHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$bool.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$dimen.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$layout.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$style.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/ResourcesCompat.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabAdapter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabClickListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$TabView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ScrollingTabContainerView$VisibilityAnimListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/ScrollingTabContainerView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$OnCloseListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$OnQueryTextListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$OnSuggestionListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView$SearchAutoComplete.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SearchView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ShareActionProvider$OnShareTargetSelectedListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ShareActionProvider$ShareAcitivityChooserModelPolicy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ShareActionProvider$ShareMenuItemOnMenuItemClickListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/ShareActionProvider.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/SherlockActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/SherlockDialogFragment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/SherlockExpandableListActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/SherlockFragment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/SherlockFragmentActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/SherlockListActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/SherlockListFragment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/app/SherlockPreferenceActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/StandaloneActionMode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/SubMenu.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/SubMenuBuilder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/menu/SubMenuWrapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SuggestionsAdapter$ChildViewCache.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/widget/SuggestionsAdapter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/widget/TabsLinearLayout.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimationHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator$AnimatorUpdateListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/View_HasStateListenerSupport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/internal/view/View_OnAttachStateChangeListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/android/support/v4/app/Watson$OnCreateOptionsMenuListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/android/support/v4/app/Watson$OnOptionsItemSelectedListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/android/support/v4/app/Watson$OnPrepareOptionsMenuListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/android/support/v4/app/Watson.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/Window$Callback.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/classes/com/actionbarsherlock/view/Window.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_bottom_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_bottom_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_bottom_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_bottom_solid_inverse_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_bottom_solid_inverse_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_bottom_solid_inverse_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_inverse_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_inverse_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_inverse_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_bottom_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_bottom_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_bottom_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_bottom_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_bottom_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_bottom_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_bottom_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_bottom_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_bottom_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_share_pack_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_share_pack_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_share_pack_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_share_pack_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_share_pack_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_share_pack_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_share_pack_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_share_pack_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_share_pack_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_share_pack_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_solid_shadow_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_solid_shadow_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_solid_shadow_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_shadow_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_shadow_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_shadow_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_stacked_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_stacked_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_stacked_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_solid_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_stacked_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_stacked_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_stacked_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_solid_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_stacked_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_stacked_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_stacked_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_stacked_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_stacked_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_stacked_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_transparent_dark_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ab_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ab_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ab_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ab_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ab_transparent_light_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__btn_cab_done_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__btn_cab_done_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__btn_cab_done_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__btn_cab_done_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__btn_cab_done_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__btn_cab_done_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__btn_cab_done_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__btn_cab_done_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__btn_cab_done_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__cab_background_bottom_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__cab_background_bottom_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__cab_background_bottom_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__cab_background_bottom_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_bottom_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__cab_background_bottom_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__cab_background_bottom_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__cab_background_bottom_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__cab_background_bottom_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_bottom_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__cab_background_top_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__cab_background_top_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__cab_background_top_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__cab_background_top_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_top_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__cab_background_top_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__cab_background_top_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__cab_background_top_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__cab_background_top_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_top_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_ab_back_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_ab_back_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_ab_back_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_ab_back_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_ab_back_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_ab_back_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_ab_back_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_ab_back_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_ab_back_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_ab_back_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_cab_done_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_cab_done_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_cab_done_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_cab_done_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_cab_done_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_cab_done_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_cab_done_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_cab_done_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_cab_done_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_cab_done_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_clear_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_clear_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_clear_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_clear_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_clear_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_clear_search_api_disabled_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_clear_search_api_disabled_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_clear_search_api_disabled_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_search_api_disabled_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_disabled_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_search_api_disabled_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_clear_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_clear_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_clear_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_commit_search_api_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_commit_search_api_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_commit_search_api_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_commit_search_api_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_commit_search_api_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_commit_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_commit_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_commit_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_commit_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_commit_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_go.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_go.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_go.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_go.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_go.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_go.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_go_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_go_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_go_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_go_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_go_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_go_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_menu_share_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_menu_share_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_menu_share_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_share_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_share_holo_dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_menu_share_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_menu_share_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_menu_share_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_share_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_share_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_voice_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_voice_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_voice_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_voice_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_voice_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__ic_voice_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__ic_voice_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__ic_voice_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__ic_voice_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__ic_voice_search_api_holo_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__list_activated_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__list_activated_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__list_activated_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__list_activated_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__list_activated_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__list_divider_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__list_divider_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__list_divider_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__list_divider_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__list_divider_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__list_divider_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__list_divider_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__list_divider_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__list_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__list_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__list_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__list_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__list_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__list_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__list_longpressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__list_longpressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__list_longpressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__list_longpressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__list_longpressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__list_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__list_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__list_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__list_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__list_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__list_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__list_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__list_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__list_selector_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__list_selector_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__list_selector_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__list_selector_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__list_selector_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__list_selector_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__list_selector_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__list_selector_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__list_selector_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__list_selector_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__menu_dropdown_panel_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__menu_dropdown_panel_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__menu_dropdown_panel_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__menu_dropdown_panel_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__menu_dropdown_panel_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__menu_dropdown_panel_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__progress_bg_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__progress_bg_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__progress_bg_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__progress_bg_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__progress_bg_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__progress_bg_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__progress_bg_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__progress_bg_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__progress_bg_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__progress_bg_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__progress_primary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__progress_primary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__progress_primary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__progress_primary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__progress_primary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__progress_primary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__progress_primary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__progress_primary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__progress_secondary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__progress_secondary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__progress_secondary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__progress_secondary_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__progress_secondary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__progress_secondary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__progress_secondary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__progress_secondary_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_48_inner_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_48_inner_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_48_inner_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_48_inner_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_inner_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_48_inner_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_48_outer_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_48_outer_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_48_outer_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_48_outer_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_outer_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_48_outer_holo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_ab_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_ab_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_ab_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_ab_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_ab_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_ab_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_ab_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_ab_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_ab_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_ab_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_ab_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_ab_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_ab_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_focused_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_ab_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_ab_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_focused_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_ab_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__spinner_ab_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__spinner_ab_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__tab_selected_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__tab_selected_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__tab_selected_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_focused_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__tab_selected_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__tab_selected_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__tab_selected_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__tab_selected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__tab_selected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__tab_selected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__tab_unselected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__tab_unselected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__tab_unselected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__tab_unselected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__tab_unselected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__tab_unselected_pressed_holo.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__textfield_search_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__textfield_search_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__textfield_search_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__textfield_search_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__textfield_search_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__textfield_search_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__textfield_search_right_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__textfield_search_right_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__textfield_search_right_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_default_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__textfield_search_right_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__textfield_search_right_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__textfield_search_right_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_default_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__textfield_search_right_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__textfield_search_right_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__textfield_search_right_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__textfield_search_right_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__textfield_search_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__textfield_search_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_selected_holo_dark.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__textfield_search_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__textfield_search_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_selected_holo_light.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-hdpi/abs__toast_frame.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-mdpi/abs__toast_frame.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/res/drawable-xhdpi/abs__toast_frame.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-hdpi/abs__toast_frame.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-mdpi/abs__toast_frame.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-xhdpi/abs__toast_frame.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/actionbarsherlock.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/libs/android-support-v4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/AbsActionBarView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/ActionBar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/ActionBarContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/ActionBarContextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/app/ActionBarImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/ActionBarSherlock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/ActionBarSherlockCompat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/ActionBarSherlockNative.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/ActionBarView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/app/ActionBarWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenuItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenuItemView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenuView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/view/ActionMode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/view/ActionProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/ActionProviderWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/widget/ActivityChooserModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/widget/ActivityChooserView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/Animator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorListenerAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/BaseMenuPresenter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/gen/com/actionbarsherlock/BuildConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/view/CollapsibleActionView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/FloatEvaluator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsAbsSpinner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsAdapterView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsColorDrawable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsLinearLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsProgressBar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsSpinner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsToast.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/IntEvaluator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/IntKeyframeSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ListMenuItemView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/gen/com/actionbarsherlock/Manifest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/view/Menu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/view/MenuInflater.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/view/MenuItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuItemImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuItemWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuPopupHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuPresenter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/ObjectAnimator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/PopupWindowCompat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/gen/com/actionbarsherlock/R.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/bin/R.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/ResourcesCompat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/test/com/actionbarsherlock/internal/ResourcesCompatTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/ScrollingTabContainerView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/widget/SearchView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/widget/ShareActionProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/SherlockActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/SherlockDialogFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/SherlockExpandableListActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragmentActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/SherlockListActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/SherlockListFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/SherlockPreferenceActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/StandaloneActionMode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/view/SubMenu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/SubMenuBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/SubMenuWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/widget/SuggestionsAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/widget/TabsLinearLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/View_HasStateListenerSupport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/internal/view/View_OnAttachStateChangeListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/android/support/v4/app/Watson.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/view/Window.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__action_bar_home.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__action_bar_tab.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__action_bar_tab_bar_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__action_bar_title_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__action_menu_item_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__action_menu_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__action_mode_bar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__action_mode_close_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout-large/abs__action_mode_close_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__activated_background_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__activated_background_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__activity_chooser_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values/abs__attrs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values/abs__bools.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-sw600dp/abs__bools.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-w480dp/abs__bools.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__btn_cab_done_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__btn_cab_done_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values/abs__colors.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values/abs__config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-w480dp/abs__config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-land/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-large-hdpi-1024x600/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-large-land-hdpi-1024x600/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-large-land-mdpi-1024x600/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-large-mdpi-1024x600/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-sw600dp/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-w360dp/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-w500dp/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-w600dp/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-xlarge/abs__dimens.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__ic_clear.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__ic_clear_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__ic_menu_moreoverflow_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values/abs__ids.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__item_background_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__item_background_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__list_menu_item_checkbox.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__list_menu_item_icon.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__list_menu_item_radio.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__list_selector_background_transition_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__list_selector_background_transition_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__list_selector_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__list_selector_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__popup_menu_item_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/color/abs__primary_text_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/color/abs__primary_text_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__progress_horizontal_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__progress_horizontal_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__progress_medium_holo.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable-v11/abs__progress_medium_holo.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__screen_action_bar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar_overlay.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__screen_simple.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__screen_simple_overlay_action_mode.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__search_dropdown_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__search_dropdown_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__search_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/abs__simple_dropdown_hint.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__spinner_ab_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__spinner_ab_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values/abs__strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values/abs__styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-v14/abs__styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__tab_indicator_ab_holo.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__textfield_searchview_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__textfield_searchview_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__textfield_searchview_right_holo_dark.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/drawable/abs__textfield_searchview_right_holo_light.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values/abs__themes.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-v11/abs__themes.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/values-v14/abs__themes.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/actionbarsherlock.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/lint.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/sherlock_spinner_dropdown_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout-v14/sherlock_spinner_dropdown_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout/sherlock_spinner_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock/res/layout-v14/sherlock_spinner_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/actionbarsherlock.xml" afterPath="$PROJECT_DIR$/.idea/libraries/actionbarsherlock.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/maintab_activity_a.xml" afterPath="$PROJECT_DIR$/res/layout/maintab_activity_a.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="loginApplication.iws" />
@@ -121,16 +1058,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainTab_MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainTab_MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/uqute/helper/MainTab_MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="42" selection-start="3781" selection-end="3781" vertical-scroll-proportion="1.0" vertical-offset="862" max-vertical-offset="3024">
-              <folding>
-                <element signature="method#onCheckedChanged#0;class#MainTab_MainActivity#0" expanded="false" />
-                <element signature="method#setupIntent#0;class#MainTab_MainActivity#0" expanded="false" />
-                <element signature="method#setupActionBar#0;class#MainTab_MainActivity#0" expanded="false" />
-                <element signature="e#5997#6077#0" expanded="false" />
-              </folding>
+            <state line="55" column="0" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="4752">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,7 +1070,7 @@
       <file leaf-file-name="MainTab_AActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/uqute/helper/MainTab_AActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="3" selection-start="2562" selection-end="2701" vertical-scroll-proportion="-8.148149" vertical-offset="500" max-vertical-offset="3780">
+            <state line="69" column="3" selection-start="2562" selection-end="2701" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="4356">
               <folding />
             </state>
           </provider>
@@ -150,16 +1082,25 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="782" selection-end="1069" vertical-scroll-proportion="-9.642858" vertical-offset="0" max-vertical-offset="864">
+            <state line="15" column="0" selection-start="782" selection-end="1069" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="864">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="39" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+            <state line="30" column="9" selection-start="613" selection-end="613" vertical-scroll-proportion="1.1065574" vertical-offset="0" max-vertical-offset="666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionBar.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/ActionBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="42" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="17316">
               <folding />
             </state>
           </provider>
@@ -293,116 +1234,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uqute" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uqute" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HRHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -454,6 +1285,26 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HRHelper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HRHelper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HRHelper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -473,11 +1324,11 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="3.2_QVGA" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -493,6 +1344,7 @@
       <recent name="D:\android\HRHelper-project\HRHelper\res" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\android\HRHelper-project\HRHelper\libs" />
       <recent name="D:\android\HRHelper\res\drawable-hdpi" />
       <recent name="D:\android\HRHelper\res\drawable" />
       <recent name="D:\android\HRHelper\res\drawable\main" />
@@ -726,7 +1578,11 @@
       <created>1377010616227</created>
       <updated>1377010616227</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="更新0.0.7 创建actionbar并修改部分  text1:0.0.6">
+      <created>1377096464721</created>
+      <updated>1377096464721</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -754,12 +1610,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18973942" sideWeight="0.7200957" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24592833" sideWeight="0.7200957" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27083334" sideWeight="0.67318434" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27793297" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
@@ -773,13 +1628,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.72206706" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20761494" sideWeight="0.72206706" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20761494" sideWeight="0.72206706" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27793297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="91" y="177" width="1096" height="800" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27083334" sideWeight="0.67318434" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -826,7 +1682,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新0.0.6 待补充注释  text1:0.0.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新0.0.7 创建actionbar并修改部分  text1:0.0.6" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -852,6 +1708,7 @@
     <MESSAGE value="添加登陆后的主界面（示例）第一个页面为瀑布流效果（初步）  text1:0.0.5" />
     <MESSAGE value="补充漏掉的文件  text1:0.0.5" />
     <MESSAGE value="更新0.0.6 待补充注释  text1:0.0.6" />
+    <MESSAGE value="更新0.0.7 创建actionbar并修改部分  text1:0.0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -860,13 +1717,6 @@
     <entry file="file://$PROJECT_DIR$/res/drawable/xlistview_arrow.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../demo/class-actionbar/test2/actionbarsherlock/src/com/actionbarsherlock/app/ActionBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="42" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.3319672" vertical-offset="90" max-vertical-offset="16884">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/ic_error.png">
@@ -881,12 +1731,10 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/R.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="613" column="32" selection-start="42829" selection-end="42829" vertical-scroll-proportion="0.3319672" vertical-offset="10854" max-vertical-offset="35334">
-          <folding />
-        </state>
+        <state line="613" column="32" selection-start="42829" selection-end="42829" vertical-scroll-proportion="0.3319672" vertical-offset="10854" max-vertical-offset="35334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../demo/class-actionbar/test2/actionbarsherlock/src/com/actionbarsherlock/app/SherlockActivity.java">
+    <entry file="file://$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/SherlockActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="22" selection-start="887" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4788">
           <folding />
@@ -902,16 +1750,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/main_topmenu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-          <folding />
-        </state>
+        <state line="4" column="20" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="687">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="687" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -943,34 +1787,36 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="782" selection-end="1069" vertical-scroll-proportion="-9.642858" vertical-offset="0" max-vertical-offset="864">
+        <state line="15" column="0" selection-start="782" selection-end="1069" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="864">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/uqute/helper/MainTab_AActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="3" selection-start="2562" selection-end="2701" vertical-scroll-proportion="-8.148149" vertical-offset="500" max-vertical-offset="3780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+        <state line="69" column="3" selection-start="2562" selection-end="2701" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="4356">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/uqute/helper/MainTab_MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="42" selection-start="3781" selection-end="3781" vertical-scroll-proportion="1.0" vertical-offset="862" max-vertical-offset="3024">
-          <folding>
-            <element signature="method#onCheckedChanged#0;class#MainTab_MainActivity#0" expanded="false" />
-            <element signature="method#setupIntent#0;class#MainTab_MainActivity#0" expanded="false" />
-            <element signature="method#setupActionBar#0;class#MainTab_MainActivity#0" expanded="false" />
-            <element signature="e#5997#6077#0" expanded="false" />
-          </folding>
+        <state line="55" column="0" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="3024">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/actionbarsherlock/src/com/actionbarsherlock/app/ActionBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="42" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="16884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="9" selection-start="613" selection-end="613" vertical-scroll-proportion="1.1065574" vertical-offset="0" max-vertical-offset="666">
+          <folding />
         </state>
       </provider>
     </entry>

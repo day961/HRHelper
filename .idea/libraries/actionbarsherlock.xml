@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="actionbarsherlock">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../demo/class-actionbar/test2/actionbarsherlock/bin/actionbarsherlock.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/actionbarsherlock/bin/actionbarsherlock.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

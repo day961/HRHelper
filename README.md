@@ -5,6 +5,7 @@
 0.0.7:<br/>
 使用actionbarsherlock创建actionbar，实现基本功能<br/>
 修改MainTab_AActivity (删除上部textview)<br/>
+准备实现自动检测新版本，实验新的下拉菜单(瀑布流)<br/>
 
 0.0.6:<br/>
 主界面的底部添加标签页，顶部添加actionbar（目前只支持android3.0以上使用，准备使用actionbarsherlock控件增加兼容性）<br/>
