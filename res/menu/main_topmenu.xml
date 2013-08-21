@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- icon -->
+	<item
+        android:id="@+id/menu_more"
+        android:showAsAction="ifRoom"
+		android:title="更多"
+        android:icon="@android:drawable/ic_menu_more" />
+
+</menu>

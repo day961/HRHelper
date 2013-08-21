@@ -67,8 +67,8 @@ public class MainTab_AActivity extends BaseListViewActivity implements XListView
                 .build();
 
 
-        TextView tt = (TextView)findViewById(R.id.TabA_topText);
-        tt.setText("用户名：" + getIntent().getStringExtra("username_info"));
+//        TextView tt = (TextView)findViewById(R.id.TabA_topText);
+//        tt.setText("用户名：" + getIntent().getStringExtra("username_info"));
 
         TextView bt = (TextView)findViewById(R.id.TabA_bottomText);
         bt.setText("用户信息：" + getIntent().getStringExtra("userid_info"));

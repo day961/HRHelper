@@ -14,6 +14,7 @@
     <string name="main_publish">发布</string>
     <string name="main_setting">设置</string>
 
+    <!--下拉刷新-->
     <string name="xlistview_header_hint_normal">下拉刷新</string>
     <string name="xlistview_header_hint_ready">松开刷新数据</string>
     <string name="xlistview_header_hint_loading">正在加载...</string>
@@ -31,4 +32,12 @@
     <string name="button_image_grid">GridView</string>
     <string name="button_image_pager">ViewPager</string>
     <string name="button_image_gallery">Gallery</string>
+
+    <!--右上角下拉菜单-->
+    <string-array name="MORE">
+        <item>第一个</item>
+        <item>第二个</item>
+        <item>第三个</item>
+        <item>第四个</item>
+    </string-array>
 </resources>

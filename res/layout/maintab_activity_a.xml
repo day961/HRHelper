@@ -13,13 +13,13 @@
               android:orientation="vertical"
               android:background="@drawable/splash">
 
-    <TextView
-            android:id="@+id/TabA_topText"
-            android:padding="20dp"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-             />
+    <!--<TextView-->
+            <!--android:id="@+id/TabA_topText"-->
+            <!--android:padding="20dp"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+             <!--/>-->
 
     <com.uqute.XListView.XListView
             android:id="@+id/xListView"

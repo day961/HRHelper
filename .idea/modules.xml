@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HRHelper.iml" filepath="$PROJECT_DIR$/HRHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../demo/class-actionbar/test2/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/../../demo/class-actionbar/test2/actionbarsherlock/actionbarsherlock.iml" />
     </modules>
   </component>
 </project>

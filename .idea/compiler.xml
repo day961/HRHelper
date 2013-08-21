@@ -5,6 +5,7 @@
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/gen" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/../../MenuDrawerDemo/library/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../../demo/class-actionbar/test2/actionbarsherlock/gen" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>
